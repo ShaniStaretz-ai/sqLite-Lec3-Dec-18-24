@@ -41,7 +41,7 @@
 
 select category, count(*), max(price) from sales group by category order by price desc;
 -- 1 group by category, find the avg price per category
-select  avg(price) from sales group by category;
+select  ROUND(avg(price),2) as avg_price from sales group by category;
 -- 2 group by category, find the min quantity per category;
 select  min(quantity) from sales group by category;
 -- -- 3 select * and total = price * quantity 
@@ -52,5 +52,5 @@ select *, (price *quantity) as total from sales;
 update sales set total=price*quantity;
 
 -- 6 group by category, find the sum of total per category
-select sum(total) from sales group by category;
+select strftime('%Y',sale_date) as sale_year,sum(total) from sales group by category;
 

@@ -5,7 +5,7 @@ GROUP BY
     always running forward, even on delete/failed insert 
 * GROUP BY- to create groups by column name:
   * each return row is a group 
-  * can add multiple paramters to do the group
+  * can add multiple parameters to do the group
   * the output data is about the group itself and not about the items in the group
   * if you want to filter with WHERE, need to add it before the GROUP BY:
     * this will filter first on all the rows and then make the groups.
@@ -15,7 +15,7 @@ GROUP BY
     FROM <table name>
     WHERE table conditions
     GROUP BY table column
-    HAVING group column
+    HAVING group conditions on group columns
 * ASCending/DESCending - from small to big / from big to small 
 * ROUND(number,2)- with return the number with 2 digits after the '.' 
 * strftime('%Y-%M',sale_date) - return the year-moth from column sale_date (text)
