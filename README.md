@@ -22,5 +22,5 @@ GROUP BY
   * '%Y'- must be capital letters
   * the parameter sale_date= must be in format of time explained in the output pattern:
     *  if sale_date= 'M/Y', the output pattern with be accordingly.
- 
+* JOIN - when you want to get data from more than 1 table.
 ## extra subjects:
